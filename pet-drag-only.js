@@ -28,15 +28,15 @@
                 box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
                 z-index: 999999;
                 font-family: Arial, sans-serif;
-                font-size: 14px;
+                font-size: 18px;
                 color: #333;
-                max-width: 300px;
+                max-width: 400px;
                 width: auto;
                 text-align: center;
                 opacity: 0;
                 transition: opacity 0.3s ease;
                 pointer-events: none;
-                min-width: 200px;
+                min-width: 250px;
             `;var t=document.createElement("div"),t=(t.style.cssText=`
                 position: absolute;
                 bottom: -10px;
@@ -58,7 +58,7 @@
                 font-family: Arial, sans-serif;
                 font-size: 14px;
                 min-width: 120px;
-            `,this.sizeRatio=window.SettingsManager?window.SettingsManager.getSetting("sizeRatio"):80,this.updatePetSize(),[{id:"static",text:"静止"},{id:"normal",text:"正常"},{id:"dance",text:"跳舞"},{id:"hide",text:"隐藏"}].forEach(e=>{let t=document.createElement("div");t.id="pet-menu-"+e.id,t.className="pet-menu-item",t.textContent=e.text,t.style.cssText=`
+            `,this.sizeRatio=window.SettingsManager?window.SettingsManager.getSetting("sizeRatio"):100,this.updatePetSize(),[{id:"static",text:"静止"},{id:"normal",text:"正常"},{id:"dance",text:"跳舞"},{id:"hide",text:"隐藏"}].forEach(e=>{let t=document.createElement("div");t.id="pet-menu-"+e.id,t.className="pet-menu-item",t.textContent=e.text,t.style.cssText=`
                     padding: 10px 15px;
                     cursor: pointer;
                     transition: all 0.2s ease;
